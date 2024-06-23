@@ -32,7 +32,7 @@ export default createStore({
     async crearGasto({ commit }, nuevoGasto) {
       try {
         const response = await axios.post(`${apiUrl}/gastos`, nuevoGasto);
-        commit('agregarGasto', response.data); // Asegúrate de que response.data contenga el nuevo gasto creado
+        commit('agregarGasto', response.data);
       } catch (error) {
         console.error('Error creating gasto:', error);
       }
