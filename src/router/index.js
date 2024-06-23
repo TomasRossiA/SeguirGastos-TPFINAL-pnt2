@@ -7,7 +7,7 @@ const routes = [
   { path: '/', component: GastosList },
   { path: '/nuevo-gasto', component: NuevoGasto },
   { path: '/estadisticas', component: EstadisticasGastos }
-  // Agrega más rutas según sea necesario para tu aplicación
+  
 ];
 
 const router = createRouter({

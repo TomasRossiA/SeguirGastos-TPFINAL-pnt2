@@ -16,7 +16,7 @@
             <td>{{ formatDate(gasto.date) }}</td>
             <td>{{ gasto.category }}</td>
             <td>{{ gasto.description }}</td>
-            <td>\${{ gasto.amount }}</td>
+            <td>${{ gasto.amount }}</td>
             <td>
               <button @click="eliminarGasto(gasto.id)">Eliminar</button>
             </td>
