@@ -1,11 +1,10 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import store from './store'; // Asegúrate de que la ruta sea correcta
+import store from './store';
 
 const app = createApp(App);
 app.use(router);
-app.use(store); // Asegúrate de usar correctamente Vuex aquí
-
+app.use(store); 
 app.mount('#app');
 

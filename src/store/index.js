@@ -1,13 +1,12 @@
-// store/index.js
 
 import { createStore } from 'vuex';
 import axios from 'axios';
 
-const apiUrl = 'https://666780f9a2f8516ff7a7aaf0.mockapi.io'; // URL base de tu API en mockAPI.io
+const apiUrl = 'https://666780f9a2f8516ff7a7aaf0.mockapi.io';
 
 export default createStore({
   state: {
-    gastos: [] // Asegúrate de que gastos se inicializa como un array vacío
+    gastos: []
   },
   mutations: {
     setGastos(state, gastos) {
@@ -19,7 +18,7 @@ export default createStore({
     eliminarGasto(state, gastoId) {
       state.gastos = state.gastos.filter(gasto => gasto.id !== gastoId);
     }
-    // Otras mutaciones según sea necesario
+  
   },
   actions: {
     async fetchGastos({ commit }) {
@@ -46,12 +45,12 @@ export default createStore({
         console.error('Error deleting gasto:', error);
       }
     }
-    // Otras acciones según sea necesario
+    
   },
   getters: {
     gastos(state) {
       return state.gastos;
     }
-    // Otros getters según sea necesario
+    
   }
 });
