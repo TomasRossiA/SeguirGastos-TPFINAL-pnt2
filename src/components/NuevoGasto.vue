@@ -46,13 +46,13 @@
   
         try {
           await this.$store.dispatch('crearGasto', {
-            date: Date.parse(this.fecha) / 1000, // Convertir la fecha a timestamp en segundos
+            date: Date.parse(this.fecha) / 1000,
             category: this.categoria,
             description: this.descripcion,
             amount: this.monto
           });
   
-          // Limpiar los campos del formulario después de guardar el gasto
+         
           this.fecha = '';
           this.categoria = '';
           this.descripcion = '';
@@ -71,8 +71,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 60px); /* Ajuste para reducir el espacio con respecto al navbar */
-    background-color: #f0f0f0; /* Color de fondo común */
+    min-height: calc(100vh - 60px);
+    background-color: #f0f0f0;
   }
   
   .gasto-form {
@@ -80,7 +80,7 @@
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white; /* Color de fondo del formulario */
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -134,7 +134,7 @@
   
   .app-name {
     font-weight: bold;
-    margin-bottom: 5px; /* Ajuste opcional */
+    margin-bottom: 5px;
   }
   
   .creadores {

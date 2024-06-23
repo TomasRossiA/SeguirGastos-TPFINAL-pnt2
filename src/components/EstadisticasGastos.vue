@@ -45,30 +45,29 @@
       }
     },
     mounted() {
-      this.$store.dispatch('fetchGastos'); // Cargar gastos al montar el componente
+      this.$store.dispatch('fetchGastos');
     }
   };
   </script>
   
   <style scoped>
-  /* Estilos específicos del componente EstadisticasGastos */
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(50vh - 30px); /* Ajustar el alto a la mitad de la ventana menos 30px */
-    background-color: #f0f0f0; /* Color de fondo */
+    height: calc(50vh - 30px);
+    background-color: #f0f0f0;
   }
   
   .estadisticas-container {
     width: 100%;
-    max-width: 600px; /* Ancho máximo de la tabla */
-    margin-top: 10px; /* Reducción del espacio superior */
+    max-width: 600px;
+    margin-top: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: white; /* Color de fondo de la tabla */
+    background-color: white;
   }
   
   .stats-table {
@@ -86,7 +85,7 @@
   }
   
   .footer {
-    margin-top: 10px; /* Reducción adicional del espacio entre contenido y footer */
+    margin-top: 10px;
     text-align: center;
     font-size: 14px;
     color: #666;
