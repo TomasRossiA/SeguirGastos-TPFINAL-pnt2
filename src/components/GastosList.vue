@@ -45,18 +45,17 @@
         }
       },
       formatDate(timestamp) {
-        const date = new Date(timestamp * 1000); // Convertir timestamp a milisegundos
+        const date = new Date(timestamp * 1000);
         return date.toLocaleDateString('es-ES');
       }
     },
     mounted() {
-      this.$store.dispatch('fetchGastos'); // Cargar gastos al montar el componente
+      this.$store.dispatch('fetchGastos');
     }
   };
   </script>
   
   <style scoped>
-  /* Estilos específicos del componente GastosList */
   .gastos-list-container {
     margin: 20px;
     padding: 20px;
@@ -111,7 +110,7 @@
   
   .app-name {
     font-weight: bold;
-    margin-bottom: 5px; /* Ajuste opcional */
+    margin-bottom: 5px;
   }
   
   .creadores {
